@@ -6,10 +6,10 @@ $tails = 0;
 for ($i = 1; $i <= 100; $i++){
   $number = rand (1,2);
   if ($number == 1){
-    echo "Heads, I win!<br>";
+    echo "Heads, I win!\n";
     $heads++;
   } else {
-    echo "Tails, you win!<br>";
+    echo "Tails, you win!\n";
     $tails++;
   }
 }
