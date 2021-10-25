@@ -1,14 +1,12 @@
 <?php
 
-/*if(empty($_POST['stringToCalculate'])){
-    $error = 'Please enter a string';
-    echo $error;
+$sentence = $_POST['stringToCalculate'];
+if (isset($_POST['submit'])) {
+    if ($_POST['spaces'] == 'yes') {
+        $result = strlen($sentence);
+        echo "There are " . $result . " characters (spaces included) in the string " . $sentence . "<br/> <br/>";
+    } else {
+        $noSpaces = preg_match_all('/[^ ]/', $sentence);
+        echo "There are " . $noSpaces . " characters (spaces excluded) in the string " . $sentence;
+    }
 }
-*/
-
-if(isset($_POST['submit-button'])){
-    $initialString = $_POST['stringToCalculate'];
-    $result = strlen($initialString);
-    echo $result;
-}
-
