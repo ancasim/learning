@@ -6,5 +6,5 @@ if (isset($_POST['submit'])){
 
     $gender = $_POST['gender'];
     
-    echo "Your surname is " . $surname . "and your gender is" . $gender;
+    echo "Your surname is " . $surname . " and your gender is " . $gender;
 }

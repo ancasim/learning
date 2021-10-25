@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+<p>
+    Please insert the temperature value and select the degree type:
+</p>
+    <form action="temperatureConversionProcessor.php" method="post">
+          <input type="number" name="temperature">
+          C<input type="radio" name="degrees" value="Celsius">
+          F<input type="radio" name="degrees" value="Fahrenheit">
+        <br><br>
+<p>
+    Select the desired accuracy:
+</p>
+        <input type="radio" id="nodecimal" name="accuracy" value="0">
+        <label for="nodecimal">no decimals</label> <br>
+        <input type="radio" id="1decimal" name="accuracy" value="1">
+        <label for="1decimal">1 decimal</label><br>
+        <input type="radio" id="2decimals" name="accuracy" value="2">
+        <label for="2decimals">2 decimals</label> <br>
+        <input type="submit" name="submit_button" value="CONVERT">
+    </form>
+</body>
+</html>
