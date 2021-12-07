@@ -15,7 +15,7 @@ echo date('l jS F Y, g:i A') . '<br/>';
 //leap year test
 $isLeapYear = date('L');
 if ($isLeapYear == 1){
-  echo date('Y') . " is a leap year";
+    echo date('Y') . " is a leap year";
 }else {
-  echo date('Y') . " is not a leap year";
+    echo date('Y') . " is not a leap year";
 }
