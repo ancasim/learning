@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Convertor</title>
+</head>
+<body>
+  <form action="temperatureConversionProcessor.php" method="POST">
+      <label for="temp">Temperature</label>
+      <input type="number" name="temperature" id="temp" required>
+      <input type="radio" name="degrees" value="C" id="cel" required>
+      <label for="cel">°C</label>
+      <input type="radio" name="degrees" value="F" id="far" required>
+      <label for="far">°F</label>
+      <br><br>
+      <label for="accurate">Accuracy</label>
+      <input list="decimals" name="accuracy" id="accurate" required>
+         <datalist id="decimals">
+             <option value="0">
+             <option value="1">
+             <option value="2">
+         </datalist>
+      <input type="submit" name="submit" value="CONVERT">
+  </form>
+</body>
+</html>
