@@ -12,5 +12,6 @@ for($i = 1; $i <= 100; $i++){
         $tails++;
     }
 }
-echo 'There are a total of ' . $heads . ' heads <br/>';
-echo 'There are a total of ' . $tails . ' tails <br/>';
+
+echo 'There were ' . $heads . ' and ' . $tails . ' tails.';
+
