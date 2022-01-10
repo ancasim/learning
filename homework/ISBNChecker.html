@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISBN Checker</title>
+</head>
+<body>
+    <form action="ISBMCheckerProcessor.php" method="POST">
+        <label for="isbn">Insert ISBN</label>
+        <input type="text" name="isbn" id="isbn" minlength="10" maxlength="10" title="Insert a 10 digits ISBN" pattern="\d{10}" required>
+        <input type="submit" name="submit" value="CHECK">
+    </form>
+
+</body>
+</html>
