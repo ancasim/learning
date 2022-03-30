@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Machine</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<form action="index.php" method="post">
+    <h1>
+        Step 1
+    </h1>
+    <h3>
+        Available Ingredients
+    </h3>
+    <p>
+        (check available ingredients quantities)
+    </p>
+    <label for="ingredients">Ingredient:</label>
+    <input list="list" name="ingredients" id="ingredients" required>
+    <datalist id="list">
+        <option value="milk">
+        <option value="sugar">
+        <option value="coffee">
+    </datalist>
+
+    <br>
+    <input name="check" type="submit" value="Check">
+
+    <br>
+    <label for="availableQuantity">Available quantity:</label>
+    <input id="availableQuantity" name="availableQuantity" type="text">
+
+    <br>
+    <h1>
+        Step 2
+    </h1>
+    <h3>
+        Available Drinks
+    </h3>
+    <p>
+        (select the desired drink)
+    </p>
+    <input name="drink" type="radio" value="espresso">espresso
+    <br>
+    <input name="drink" type="radio" value="latte">latte
+    <br>
+    <input name="drink" type="radio" value="cappuccino">cappuccino
+    <br>
+    <input name="submit" type="submit" value="Select">
+</form>
+
+<!-- aparat de cafea -->
+<div class="container">
+    <div class="coffee-header">
+        <div class="coffee-header__buttons coffee-header__button-one"></div>
+        <div class="coffee-header__buttons coffee-header__button-two"></div>
+        <div class="coffee-header__display"></div>
+        <div class="coffee-header__details"></div>
+    </div>
+    <div class="coffee-medium">
+        <div class="coffe-medium__exit"></div>
+        <div class="coffee-medium__arm"></div>
+        <div class="coffee-medium__liquid"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+        <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+        <div class="coffee-medium__cup"></div>
+    </div>
+    <div class="coffee-footer"></div>
+</div>
+
+</body>
+</html>

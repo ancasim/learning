@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "name": "espresso",
+    "milk": "0",
+    "sugar": "10",
+    "coffee": "30"
+  },
+  {
+    "id": "2",
+    "name": "latte",
+    "milk": "40",
+    "sugar": "10",
+    "coffee": "10"
+  },
+  {
+    "id": "3",
+    "name": "cappuccino",
+    "milk": "30",
+    "sugar": "20",
+    "coffee": "20"
+  }
+]
